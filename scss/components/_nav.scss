@@ -1,0 +1,127 @@
+.offcanvas-menu{
+  margin-top: rem-calc(30);
+  @include bp(desktop){
+  width: 70%;
+  display: inline-block;
+  margin-top: rem-calc(0);
+  float: right;
+  }
+  @include bp(wide){
+  margin-right: rem-calc(60);
+  }
+  ul{
+    list-style-type: none;
+    text-align: center;
+    @include bp(desktop){
+    margin: 0;
+    }
+  }
+  li{
+    font-size: rem-calc(10);
+    @include bp(desktop){
+    display: inline-block;
+    margin: 0 rem-calc(15);
+    }
+    @include bp(wide){
+    margin: 0 rem-calc(30);
+    }
+  }
+
+  .home{
+    background-image: url('../img/nav_home.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(25) rem-calc(-5);
+    @include bp(desktop){
+     padding: rem-calc(40) rem-calc(5) rem-calc(10) rem-calc(5);
+     background-position: 0 rem-calc(2);
+     }
+  }
+  .coins{
+    background-image: url('../img/nav_coins.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(28) 0;
+    padding: rem-calc(40) rem-calc(30) rem-calc(10) rem-calc(33);
+    @include bp(desktop){
+    background-position: 0 0;
+    padding: rem-calc(40) rem-calc(5) rem-calc(10) rem-calc(5);
+    }
+  }
+  .patches{
+    background-image: url('../img/nav_patch.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(35) 0;
+    padding: rem-calc(40) rem-calc(30) rem-calc(10) rem-calc(33);
+    @include bp(desktop){
+    background-position: rem-calc(5) 0;
+    padding: rem-calc(40) rem-calc(5) rem-calc(10) rem-calc(5);
+    }
+  }
+  .pins{
+    background-image: url('../img/nav_pins.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(23) 0;
+    padding: rem-calc(40) rem-calc(30) rem-calc(10) rem-calc(33);
+    @include bp(desktop){
+    background-position: rem-calc(-4) 0;
+    padding: rem-calc(40) rem-calc(5) rem-calc(10) rem-calc(5);
+    }
+
+  }
+  .buckles{
+    background-image: url('../img/nav_buckles.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(35) 0;
+    padding: rem-calc(40) rem-calc(30) rem-calc(10) rem-calc(33);
+    @include bp(desktop){
+    background-position: rem-calc(6) 0;
+    padding: rem-calc(40) rem-calc(5) rem-calc(10) rem-calc(5);
+    }
+
+
+  }
+  .openers{
+    background-image: url('../img/nav_openers.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(35) 0;
+    padding: rem-calc(40) rem-calc(30) rem-calc(10) rem-calc(33);
+    @include bp(desktop){
+    background-position: rem-calc(6) 0;
+    padding: rem-calc(40) rem-calc(5) rem-calc(10) rem-calc(5);
+    }
+
+  }
+  .poker{
+    background-image: url('../img/nav_pokerchips.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(28) 0;
+    padding: rem-calc(40) rem-calc(30) rem-calc(10) rem-calc(33);
+    @include bp(desktop){
+    background-position: rem-calc(0) 0;
+    padding: rem-calc(40) rem-calc(5) rem-calc(10) rem-calc(5);
+    }
+
+  }
+  .more{
+    background-image: url('../img/nav_moreicon.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(28) 0;
+    padding: rem-calc(40) rem-calc(30) rem-calc(10) rem-calc(33);
+    @include bp(desktop){
+    background-position: rem-calc(0) 0;
+    padding: rem-calc(40) rem-calc(5) rem-calc(10) rem-calc(5);
+    }
+
+  }
+  a{
+    color: $medium-gray;
+    padding: rem-calc(30) rem-calc(30) rem-calc(10) rem-calc(30);
+    font-size: rem-calc(10);
+    background-color: $white;
+  }
+
+  a:hover{
+    background-color: $white;
+    color: $medium-gray;
+  }
+
+}

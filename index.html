@@ -4,165 +4,336 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Military Coins</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
+
+<div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+
+        <!-- Close button -->
+       <button class="close-button" aria-label="Close menu" type="button" data-close>
+       <span aria-hidden="true">&times;</span>
+       </button>
+
+       <nav class="offcanvas-menu">
+        <ul>
+          <li><a class="home button" href="#">HOME</a></li>
+          <li><a class="coins button" href="#">COINS</a></li>
+          <li><a class="patches button" href="#">PATCHES</a></li>
+          <li><a class="pins button" href="#">PINS</a></li>
+          <li><a class="buckles button" href="#">BUCKLES</a></li>
+          <li><a class="openers button" href="#">OPENERS</a></li>
+          <li><a class="poker button" href="#">POKER</a></li>
+          <li><a class="more button" href="#">MORE</a></li>
+        </ul>
+       </nav>
+
     </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <header>
+        <a class="down-arrow" href="#"><img src="img/down-chevron.png" alt="" /></a>
+        <a class="up-arrow-button" href="#"><img src="img/up-chevron.png" alt="" /></a>
+        <div class="header-row1">
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
+          <nav>
+            <ul class="menu">
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">FAQ'S</a></li>
+              <li><a href="#">RESOURCES</a></li>
+            </ul>
+          </nav>
+
+
+          <form class="" action="index.html" method="post">
+            <input class="search" type="text" name="search" value="" placeholder="Search">
+          </form>
+
+          <div class="payment-order">
+            <a class="button payment" href="#">MAKE A PAYMENT</a>
+            <a class="button order-status" href="#">ORDER STATUS</a>
+          </div>
+
+          <div class="cart-account">
+            <a class="cart button" href="#">
+            <span>3</span>
+            </a>
+            <a class="button myaccount" href="#">MY ACCOUNT</a>
           </div>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
+
+      <div class="header-row2">
+          <div class="header_logo">
+            <a href="#"><h1>MILITARY<span class="coins">COINS</span></h1></a>
+            <a href="#"><p>A VETERAN OWNED FAMILY BUSINESS</p></a>
           </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
+
+        <div class="formobile icon"  data-toggle="offCanvasLeft">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
+
+<!-- onclick="myFunction(this)" -->
+
+        <nav class="offcanvas-menu main-menu">
+          <ul>
+            <li><a class="home button" href="#">HOME</a></li>
+            <li><a class="coins button" href="#">COINS</a></li>
+            <li><a class="patches button" href="#">PATCHES</a></li>
+            <li><a class="pins button" href="#">PINS</a></li>
+            <li><a class="buckles button" href="#">BUCKLES</a></li>
+            <li><a class="openers button" href="#">OPENERS</a></li>
+            <li><a class="poker button" href="#">POKER</a></li>
+            <li><a class="more button" href="#">MORE</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+
+
+    <div class="banner">
+      <img  src="img/banner_icon.png" alt="" />
+
+      <div class="banner-content">
+        <h1>HIGH QUALITY</h1>
+        <p>We make outstanding challenged coins.</p>
+        <a class="button" href="#"> SEE MORE SAMPLES</a>
+      </div>
+
+    </div>
+
+     <!-- -.................................................... -->
+
+    <div class="small_banners">
+      <div class="secure_payment">
+        <img class="lock" src="img/lock_icon.png" alt="" />
+      <div class="secure_payment-content">
+        <h1>Secure</h1>
+        <p>payment</p>
+        <h6>WE ACCEPT:</h6>
+        <a href="#"><img class="img mastercard" src="img/mastercard.png" alt="" /></a>
+        <a href="#"><img class="img" src="img/visa.png" alt="" /></a>
+        <a href="#"><img class="img" src="img/paypal.png" alt="" /></a>
+      </div>
+
+        <a class="button" href="#">MAKE A PAYMENT</a>
+      </div>
+
+      <div class="order_status">
+        <h1>ORDER <span class="status-color">STATUS</span></h1>
+        <p>Enter your order number below to get the latest status of your order.</p>
+
+        <form class="" action="index.html" method="post">
+          <label for="">INVOICE NUMBER:</label>
+          <input type="text" name="name" value="">
         </form>
-      </div>     
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>       
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>           
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>          
+        <a class="button" href="#">LOOK UP</a>
+      </div>
+
+      <div class="customer_service">
+        <div class="customer_service-left">
+          <h1>Superb!</h1>
+          <h5>CUSTOMER SERVICE</h5>
+          <p>We want you to be satisfied with your order.</p>
+          <h6><span class="free">Free</span> Artwork & Design Services</h6>
+          <h6><span class="free">Free</span>  Die Cutting Services</h6>
+        </div>
+
+        <div class="customer_service-right">
+          <img src="img/satisfaction_icon.png" alt="" />
+          <a class="button" href="#">GET A QUOTE</a>
         </div>
       </div>
     </div>
+     <!-- -.................................................... -->
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <section class="featured-products">
+      <h1><span class="featured-color">Featured</span> products</h1>
+      <p>See our products created in outstanding quality</p>
+
+      <a href="#">
+        <div class="products patches">
+          <img src="img/prdcts_patches.png" alt="" />
+          <h6 class="embroided">EMBROIDED</h6>
+          <h4>PATCHES</h4>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="products pins">
+          <img src="img/prdcts_pins.png" alt="" />
+          <h6 class="military">MILITARY</h6>
+          <h4>PINS</h4>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="products openers">
+          <img src="img/prdcts_openers.png" alt="" />
+          <h6 class="bottle">BOTTLE</h6>
+          <h4>OPENERS</h4>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="products patches">
+          <img src="img/prdcts_buckles.png" alt="" />
+          <h6 class="belt">BELT</h6>
+          <h4>BUCKLES</h4>
+        </div>
+      </a>
+    </section>
+     <!-- -.................................................... -->
+
+    <section class="more_products">
+      <h1>Discover more products</h1>
+      <p>Poker Chips, Buttons, Belt Buckles, and  more!</p>
+      <a class="button" href="#">SEE GENERIC PRODUCTS</a>
+    </section>
+     <!-- -.................................................... -->
+
+    <section class="seo">
+      <img src="img/seo_image.png" alt="" />
+
+      <div class="seo-content">
+        <h1>A family business that <span>you can trust</span></h1>
+        <p>
+          We have been making coins, bottle openers, pins, patches and poker chips since 2005.
+          We are family business founded by a retired US Navy CMC.
+        </p>
+
+        <p>
+          We believe our combination of excellent customer service, outstanding quality,
+          and reasonable prices cannot be matched. We are honored to work with customers
+          and look forward to making more awesome products!
+        </p>
+        <a class="button" href="#">GET A QUOTE</a>
+      </div>
+    </section>
+     <!-- -.................................................... -->
+
+  <footer>
+    <div class="footer-row1">
+
+      <div class="footer-row1-col1">
+        <h1><span>Never</span> miss our exclusive offers.</h1>
+        <p>We will keep you updated with latest deals and special offers.</p>
+        <div class="input-group">
+          <input type="text" class="email-address" name="name" value="" placeholder="Input email address">
+          <input type="button" class="button" name="name" value="SUBSCRIBE">
+        </div>
+      </div>
+
+                  <!-- -.................................................... -->
+
+      <div class="footer-row1-col2">
+
+        <div class="f-row1-col2-left">
+          <h6>COMPANY INFO</h6>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+
+          <h6>FOLLOW US</h6>
+          <ul class="menu">
+            <li><a href="#"><img src="img/fb.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/pinterest.png" alt="" /></a></li>
+          </ul>
+        </div>
+
+        <div class="f-row1-col2-right">
+          <h6>CUSTOMER CARE</h6>
+          <ul>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Returns/Exchange</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">FAQs  </a></li>
+          </ul>
+        </div>
+
+      </div>
+              <!-- -.................................................... -->
+
+      <div class="footer-row1-col3">
+        <div class="f-row1-col3-left">
+          <h6>HAVE A QUESTION?</h6>
+          <h5>EMAIL US: </h5>
+          <a href="#">marty@milcoin.com</a>
+          <a href="#">mil.coin@gmail.com</a>
+          <h5 class="callus">CALL US:</h5>
+          <p>832-593-3577</p>
+        </div>
+
+        <div class="f-row1-col3-right">
+          <h6>WE ACCEPT</h6>
+          <ul class="menu">
+            <li><a href="#"><img src="img/footer_visa.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/footer_mastercard.png" alt="" /></a></li>
+            <li><a href="#"><img src="img/footer_paypal.png" alt="" /></a></li>
+          </ul>
+        </div>
+      </div>
+              <!-- -.................................................... -->
+    </div>
+
+    <div class="footer-row2">
+      <div class="footer-row2-col1">
+        <a href="#"><img src="img/footer_logo.png" alt="" /></a>
+        <p> © 2015 Military Coins. All rights reserved.</p>
+      </div>
+      <div class="footer-row2-col2">
+        <a class="button" href="#">Country <br> <span>Philippines</span></a>
+      </div>
+    </div>
+  </footer>
+
+ </div>
+</div>
+
+</div>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="js/app.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+          $(".down-arrow").click(function(){
+            $(".header-row1").slideDown("slow");
+            $(".down-arrow").hide();
+            $(".up-arrow-button").show();
+          });
+        });
+
+        $(document).ready(function(){
+          $(".up-arrow-button").click(function(){
+            $(".header-row1").slideUp("slow");
+            $(".up-arrow-button").hide();
+            $(".down-arrow").show();
+          });
+        });
+  </script>
+
+
+
   </body>
 </html>

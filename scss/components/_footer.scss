@@ -1,0 +1,317 @@
+footer{
+  padding: rem-calc(10);
+  border-top: 0.5px solid #eeeeee;
+  @include bp(tablet){
+  padding-top: rem-calc(30);
+  }
+  @include bp(desktop){
+  padding: rem-calc(10) rem-calc(30);
+  }
+  @include bp(wide){
+    min-width: 100%;
+  }
+}
+
+.footer-row1{
+  @include bp(tablet){
+  @include grid-row();
+  padding-bottom: rem-calc(30);
+  }
+  @include bp(wide){
+  min-width: 100%;
+  }
+
+  .footer-row1-col1{
+    padding-top: rem-calc(20);
+    background-image: url('../img/envelope.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(190) rem-calc(20);
+    @include bp(tablet){
+    @include grid-column(5,0);
+    padding-right: rem-calc(10);
+    }
+    @include bp(desktop){
+    @include grid-column(4,0);
+    padding-right: rem-calc(20);
+    }
+    @include bp(wide){
+    @include grid-column(3,0);
+    margin-left: rem-calc(50);
+    background-position: rem-calc(210) rem-calc(20);
+    }
+    h1{
+      width: 65%;
+      font-family: 'Marcellus SC', serif;
+      font-size: rem-calc(22);
+      letter-spacing: 0.01em;
+      font-weight: bold;
+      @include bp(wide){
+      letter-spacing: 0.1em;
+      width: 70%;
+      }
+    }
+    span{
+      color: $secondary-color;
+    }
+    p{
+      font-size: rem-calc(12);
+      color:$medium-gray;
+      width: 65%;
+      @include bp(wide){
+      font-size: rem-calc(14);
+      width: 70%;
+      }
+    }
+    input{
+      width: 70%;
+      display: inline-block;
+    }
+    .email-address{
+      font-size: rem-calc(12);
+      height: 29px;
+      font-family: 'Lato', serif;
+      border: 0.5px solid #bfbfbf;
+      }
+    .button{
+      width: 30%;
+      font-size: rem-calc(10);
+      background-color: $primary-color;
+      margin-bottom: 0;
+      background-image: url('../img/right_arrow.png');
+      background-repeat: no-repeat;
+      background-position: rem-calc(70) rem-calc(10);
+      padding-left: rem-calc(3);
+      }
+    }
+
+    .footer-row1-col2{
+      width: 100%;
+      @include bp(tablet){
+      @include grid-column(5,0);
+      }
+      @include bp(desktop){
+      @include grid-column(4,0);
+      }
+      @include bp(wide){
+      @include grid-column(3,0);
+      margin-left: rem-calc(120);
+      }
+      h6{
+        font-size: rem-calc(12);
+        font-family: 'Marcellus SC', serif;
+        color: $dark-gray;
+        margin-left: rem-calc(10);
+        font-weight: bold;
+        @include bp(wide){
+        font-size: rem-calc(13);
+        }
+      }
+      a{
+        font-size: rem-calc(12);
+        color: $medium-gray;
+
+      }
+        .f-row1-col2-left{
+          display: inline-block;
+          @include bp(tablet){
+          padding-left: rem-calc(20);
+          }
+          h6{
+            margin: rem-calc(20) 0 0 0;
+            @include bp(tablet){
+            margin-left: rem-calc(10);
+            }
+          }
+          ul{
+            list-style-type: none;
+            margin: 0 0 rem-calc(30) rem-calc(10);
+            a{
+            padding: 0;
+            }
+          }
+          .menu{
+            margin-left: 0;
+            }
+          }
+      .f-row1-col2-right{
+        display: inline-block;
+        float: right;
+        @include bp(tablet){
+        padding-right: rem-calc(35);
+        }
+        @include bp(desktop){
+        padding-right: rem-calc(10);
+        }
+        h6{
+          margin-top: rem-calc(20);
+          margin-bottom: 0;
+          }
+        ul{
+          list-style-type: none;
+          margin-left: rem-calc(10);
+        }
+      }
+
+    }
+
+    .footer-row1-col3{
+      padding-top: rem-calc(30);
+      @include bp(tablet){
+      @include grid-column(2,0);
+      padding-top: rem-calc(20);
+      }
+      @include bp(desktop){
+      @include grid-column(4,0);
+      }
+      @include bp(wide){
+      @include grid-column(3,0);
+      margin-right: rem-calc(50);
+      }
+      h6{
+        font-size: rem-calc(12);
+        font-family: 'Marcellus SC', serif;
+        color: $dark-gray;
+        font-weight: bold;
+        @include bp(wide){
+        font-size: rem-calc(13);
+        }
+      }
+      .f-row1-col3-left{
+        width: 55%;
+        display: inline-block;
+        padding-left: rem-calc(10);
+        @include bp(tablet){
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        }
+        @include bp(desktop){
+        display: inline-block;
+        width: 50%;
+        padding-left: rem-calc(30);
+        }
+        @include bp(wide){
+        padding-left: rem-calc(20);
+        margin-right: rem-calc(30);
+        }
+
+        a{
+          font-size: rem-calc(12);
+          text-decoration: underline;
+          color: $dark-gray;
+          }
+        h5{
+          font-size: rem-calc(11);
+          color: $dark-gray;
+          // font-family: 'Lato', sans-serif;
+          margin-bottom: 0;
+          }
+        .callus{
+          margin-top: rem-calc(20);
+          @include bp(desktop){
+          margin-top: rem-calc(40);
+            }
+          }
+        p{
+          font-size: rem-calc(14);
+          font-weight: bold;
+          font-family: 'Lato', serif;
+          }
+        }
+      .f-row1-col3-right{
+          display: inline-block;
+          float: right;
+         @include bp(tablet){
+          display: block;
+          float: left;
+          }
+          @include bp(desktop){
+          display: inline-block;
+          float: right;
+          }
+          a{
+            padding: 0;
+            margin-left: rem-calc(2);
+            }
+        }
+
+    }
+
+}
+
+.footer-row2{
+  border-top: 0.5px solid #eeeeee;
+  padding: rem-calc(20) rem-calc(10) rem-calc(10) rem-calc(10);
+  width: 100%;
+  @include bp(tablet){
+  padding:0;;
+  }
+
+  .footer-row2-col1{
+    width: 100%;
+    display: inline-block;
+    @include bp(tablet){
+      width: 40%;
+      margin-top: rem-calc(15);
+    }
+    @include bp(desktop){
+      width: 35%;
+    }
+    @include bp(wide){
+      width: 30%;
+      margin-left: rem-calc(50);
+    }
+    img{
+      width: 50%;
+      margin-right: rem-calc(5);
+      margin-bottom: rem-calc(5);
+        }
+    p{
+      width: 45%;
+      font-size: rem-calc(10);
+      color: $medium-gray;
+      display: inline-block;;
+      padding-left: rem-calc(10);
+      line-height: 1em;
+      @include bp(tablet){
+      width: 40%;
+      }
+      @include bp(desktop){
+      padding-left: rem-calc(20);
+      }
+      @include bp(wide){
+      font-size: rem-calc(12);
+      }
+      }
+    }
+
+  .footer-row2-col2{
+    display: inline-block;
+    @include bp(tablet){
+      float: right;
+      margin-left: rem-calc(10);
+    }
+    @include bp(wide){
+      margin-right: rem-calc(50);
+    }
+    a{
+      font-size: rem-calc(11);
+      color: $dark-gray;
+      background-color: $white;
+      @include button-dropdown(0.3em, $medium-gray);
+      background-image: url('../img/flag.png');
+      background-repeat: no-repeat;
+      background-position: 0 rem-calc(11);
+      padding: rem-calc(10) 0 0 rem-calc(3);
+      font-family: 'Lato',serif;
+      @include bp(desktop){
+        background-position: rem-calc(5) rem-calc(11);
+      }
+      }
+    span{
+      padding-left: rem-calc(43);
+      font-size: rem-calc(14);
+
+      }
+    }
+}

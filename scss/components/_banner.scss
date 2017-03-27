@@ -1,0 +1,564 @@
+.banner{
+  background-color: #dedede;
+  padding: rem-calc(40) rem-calc(10) rem-calc(20) 0;
+  width: 100%;
+  @include bp(tablet){
+  @include grid-row();
+  padding-bottom: rem-calc(80);
+  }
+  @include bp(wide){
+  min-width: 100%;
+  }
+  img{
+    padding-left: 0;
+    @include bp(tablet){
+    @include grid-column(7,0);
+    }
+  }
+  .banner-content{
+    padding: rem-calc(40) rem-calc(10);
+    @include bp(tablet){
+    @include grid-column(5,0);
+    padding: rem-calc(90) 0 0 rem-calc(50);
+    }
+    @include bp(desktop){
+    padding: rem-calc(130) 0 0 rem-calc(90);
+    }
+    @include bp(wide){
+    padding: rem-calc(180) 0 0 rem-calc(120);
+    }
+    h1{
+      font-weight: bold;
+      color: $black;
+      margin: 0;
+      font-family: 'Marcellus SC', serif;
+      @include bp(tablet){
+      font-size: rem-calc(30);
+      }
+      @include bp(wide){
+      font-size: rem-calc(36);
+      }
+    }
+    p{
+      color: $dark-gray;
+      font-size: rem-calc(13);
+      @include bp(wide){
+      font-size: rem-calc(16);
+      margin-bottom: rem-calc(30);
+      }
+    }
+    .button{
+      font-size: rem-calc(12);
+      padding: rem-calc(8) rem-calc(20);
+      @include bp(tablet){
+      padding: rem-calc(8) rem-calc(10);
+      }
+      @include bp(wide){
+      letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+
+.small_banners{
+  background-color: #dedede;
+  width: 100%;
+  padding: rem-calc(10);
+  @include bp(tablet){
+    @include grid-row();
+  }
+  @include bp(desktop){
+  padding: 0;
+  }
+  @include bp(wide){
+  min-width: 100%;
+  }
+  .secure_payment{
+    width: 100%;
+    background-color: $white;
+    padding: rem-calc(30) rem-calc(20);
+    margin-bottom: rem-calc(10);
+    @include bp(tablet){
+      @include grid-column(5,0);
+    margin: 0 rem-calc(30) rem-calc(10) rem-calc(15);
+    padding: rem-calc(40) rem-calc(30);
+    }
+    @include bp(desktop){
+      @include grid-column(3,0);
+    margin: 0 rem-calc(22) rem-calc(0) rem-calc(25);
+    padding: rem-calc(30) rem-calc(20) rem-calc(35) rem-calc(20);
+    }
+    @include bp(wide){
+      @include grid-column(2.8,0);
+    margin: 0 rem-calc(15) rem-calc(0) rem-calc(20);
+    padding: rem-calc(41) rem-calc(20) rem-calc(35) rem-calc(20);
+    }
+    .lock{
+      padding: rem-calc(15) 0;
+      @include bp(desktop){
+      width: 30%;
+      padding-top: rem-calc(25);
+      }
+      @include bp(wide){
+        padding-top: rem-calc(15);
+        margin-left: rem-calc(20);
+      }
+      }
+
+    .secure_payment-content{
+      width: 60%;
+      display: inline-block;
+      float: right;
+      padding: rem-calc(10) 0;
+      @include bp(desktop){
+      width: 70%;
+      padding-bottom: rem-calc(15);
+        }
+      @include bp(wide){
+      width: 60%;
+        }
+      }
+
+      h1{
+        color: #02a4d9;
+        font-family: 'Marcellus SC', serif;
+        font-size: rem-calc(40);
+        margin-bottom: 0;
+        line-height: 0.8;
+        @include bp(desktop){
+        font-size: rem-calc(38);
+        }
+        @include bp(wide){
+        font-size: rem-calc(40);
+          }
+        }
+      p{
+        color: $dark-gray;
+        font-size: rem-calc(18);
+        margin-left: rem-calc(22);
+        font-weight: bold;
+        @include bp(desktop){
+        font-size: rem-calc(18);
+        }
+        @include bp(wide){
+        font-size: rem-calc(20);
+          }
+        }
+      h6{
+        font-size: rem-calc(10);
+        color: $medium-gray;
+        margin: rem-calc(33) 0 0 rem-calc(22);
+        letter-spacing: 0.1em;
+        @include bp(desktop){
+        margin: rem-calc(20) 0 0 rem-calc(22);
+          }
+        @include bp(wide){
+        margin: rem-calc(30) 0 0 rem-calc(22);
+          }
+        }
+      .img{
+        padding:0;
+        }
+      .mastercard{
+        margin-left: rem-calc(22);
+        }
+      .button{
+        background-color: $dark-gray;
+        font-size: rem-calc(11);
+        letter-spacing: 0.1em;
+        margin: rem-calc(50) 0 0 rem-calc(60);
+        @include bp(tablet){
+        margin-top: rem-calc(40);
+        }
+        @include bp(desktop){
+        margin: rem-calc(50) 0 0 rem-calc(40);
+          }
+        @include bp(wide){
+        margin: rem-calc(40) 0 rem-calc(10) rem-calc(70);
+        }
+        }
+    }
+
+  .order_status{
+    background-color: $white;
+    padding: rem-calc(40) rem-calc(30);
+    width: 100%;
+    background-image: url('../img/order-status-bg.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(120) rem-calc(160);
+    @include bp(tablet){
+    @include grid-column(6,0);
+    background-position: rem-calc(200) rem-calc(160);
+    }
+    @include bp(desktop){
+    @include grid-column(3,0);
+    padding: rem-calc(30) rem-calc(20);
+    background-position: rem-calc(80) rem-calc(110);
+    }
+    @include bp(wide){
+    @include grid-column(2.8,0);
+      // padding: rem-calc(45) rem-calc(25);
+    padding: rem-calc(52) rem-calc(25) rem-calc(40) rem-calc(25);
+    background-position: rem-calc(150) rem-calc(135);
+    }
+
+    h1{
+      font-weight: bold;
+      color: $dark-gray;
+      margin-bottom: rem-calc(20);
+      @include bp(tablet){
+      font-size: rem-calc(26);
+      margin-bottom: rem-calc(11);
+        }
+      @include bp(desktop){
+      font-size: rem-calc(24);
+        }
+      @include bp(wide){
+      font-size: rem-calc(20);
+      letter-spacing: 0.1em;
+      font-family: 'Marcellus SC', serif;
+        }
+      }
+    .status-color{
+      color: $secondary-color;
+      }
+      p{
+        font-size: rem-calc(13);
+        color:$medium-gray;
+        @include bp(desktop){
+        font-size: rem-calc(11);
+        }
+        @include bp(wide){
+        font-size: rem-calc(14);
+        }
+      }
+      label{
+        font-size: rem-calc(10);
+        font-weight: bold;
+        color: $medium-gray;
+        letter-spacing: 0.1em;
+        margin-top: rem-calc(40);
+        @include bp(desktop){
+        margin-top: rem-calc(40);
+        }
+        @include bp(wide){
+        margin-top: rem-calc(30);
+        }
+      }
+      input{
+        border: 0;
+        }
+      .button{
+        background-color: $dark-gray;
+        font-size: rem-calc(11);
+        @include bp(tablet){
+        margin-bottom: rem-calc(5);
+          }
+        }
+    }
+
+  .customer_service{
+    width: 100%;
+    padding: rem-calc(30);
+    background-color: #04264d;
+    margin-top: rem-calc(10);
+    color: $white;
+    background-image: url('../img/superb-bg.png');
+    background-repeat: no-repeat;
+    background-position: rem-calc(-250) rem-calc(350);
+    @include bp(tablet){
+    @include grid-column(12);
+    width: 96%;
+    margin-right: rem-calc(15);
+    margin-top: rem-calc(15);
+    background-position: rem-calc(40) rem-calc(20);
+    background-size: cover;
+    }
+    @include bp(desktop){
+    @include grid-column(5,10);
+    margin-top: 0;
+    padding: rem-calc(20);
+    background-position: rem-calc(-30) rem-calc(5);
+    }
+    @include bp(wide){
+    @include grid-column(5.8,0);
+    padding: rem-calc(30) rem-calc(40);
+    background-position: rem-calc(-5) rem-calc(5);
+    }
+    .customer_service-left{
+      @include bp(tablet){
+      display: inline-block;
+      margin-left: rem-calc(30);
+      }
+      @include bp(desktop){
+      width: 50%;
+      margin-left: rem-calc(10);
+      }
+      @include bp(wide){
+      margin-left: rem-calc(20);
+      }
+    }
+      h1{
+        color: $white;
+        font-size: rem-calc(60);
+        font-family: 'Marcellus SC', serif;
+        margin: 0;
+        line-height: 1em;
+        @include bp(tablet){
+        font-size: rem-calc(63);
+        }
+        @include bp(desktop){
+        font-size: rem-calc(55);
+        }
+        @include bp(wide){
+        font-size: rem-calc(63);
+        }
+        }
+      h5{
+        color: $white;
+        font-size: rem-calc(17);
+        letter-spacing: 0.1em;
+        margin-bottom: rem-calc(30);
+        @include bp(desktop){
+        margin-bottom: rem-calc(20);
+        font-size: rem-calc(16);
+        }
+        @include bp(wide){
+        padding-left: rem-calc(8);
+        margin-bottom: 0;
+        }
+      }
+      p{
+        font-size: rem-calc(18);
+        font-family: 'Lato', sans-serif;
+        margin-bottom: rem-calc(50);
+        @include bp(tablet){
+        width: 70%;
+        }
+        @include bp(desktop){
+        font-size: rem-calc(14);
+        width: 100%;
+        margin-bottom: rem-calc(20);
+        }
+        @include bp(wide){
+        font-size: rem-calc(18);
+        margin-top: rem-calc(30);
+        padding-right: rem-calc(60);
+        margin-bottom: rem-calc(30);
+        }
+      }
+      h6{
+        font-size: rem-calc(16);
+        color: $white;
+        @include bp(desktop){
+        font-size: rem-calc(14);
+        }
+      }
+      .free{
+        font-weight: bold;
+        }
+      .customer_service-right{
+        margin-top: rem-calc(50);
+        text-align: center;
+        @include bp(tablet){
+        display: inline-block;
+        margin: rem-calc(20) rem-calc(100) 0 0;
+        float: right;
+        }
+        @include bp(desktop){
+        margin: rem-calc(10) rem-calc(0) 0 0;
+        }
+        @include bp(wide){
+        margin: rem-calc(20) rem-calc(50) 0 0;
+        }
+        img{
+          @include bp(tablet){
+          display: block;
+          }
+        }
+        a{
+          font-size: rem-calc(11);
+          letter-spacing: 0.1em;
+          margin-top: rem-calc(46);
+          }
+        }
+    }
+}
+
+///////////////////////////////gallery.html style
+
+.gallery-banner{
+  background-color: #dedede;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: rem-calc(40);
+
+  .img-gallery-banner{
+    margin: 0 auto;
+    position: absolute;
+    top: rem-calc(-60);
+    padding: rem-calc(0) rem-calc(15);
+    @include bp(tablet){
+    padding: rem-calc(0) rem-calc(120);
+    top: rem-calc(-110);
+    }
+    @include bp(desktop){
+    top: rem-calc(-125);
+    padding: rem-calc(0) rem-calc(200);
+    }
+    @include bp(wide){
+    margin-left: rem-calc(350);
+    padding: rem-calc(0) rem-calc(0);
+    }
+  }
+
+  .content-gallery-banner{
+    margin-top: rem-calc(110);
+    margin-left: rem-calc(15);
+    padding: rem-calc(10) rem-calc(35);
+    @include bp(tablet){
+    margin-top: rem-calc(220);
+    padding: rem-calc(10) rem-calc(180);
+    }
+    @include bp(desktop){
+    padding: rem-calc(10) rem-calc(250);
+    margin-left: rem-calc(50);
+    }
+    @include bp(wide){
+    padding: rem-calc(50) rem-calc(250);
+    margin-left: rem-calc(200);
+    }
+    h1{
+      font-family: 'Marcellus SC', serif;
+      color: $black;
+      font-size: rem-calc(20);
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      line-height: 1.2;
+      @include bp(tablet){
+      font-size: rem-calc(28);
+      }
+    }
+    span{
+      color: $medium-gray;
+      font-size: rem-calc(13);
+      letter-spacing: 0.2em;
+      font-weight: bold;
+      @include bp(tablet){
+      font-size: rem-calc(14);
+      }
+      @include bp(desktop){
+      letter-spacing: 0.3em;
+      }
+    }
+    p{
+      color: $dark-gray;
+      font-family: 'Lato', sans-serif;
+      font-size: rem-calc(13);
+      margin: rem-calc(20) 0 rem-calc(30) 0;
+      @include bp(tablet){
+      font-size: rem-calc(16);
+      }
+      @include bp(wide){
+      padding-right: rem-calc(190);
+      }
+    }
+    .button{
+      padding: rem-calc(8) rem-calc(13);
+      font-size: rem-calc(11);
+    }
+    .graybg{
+      background-color: $dark-gray;
+      margin-left: rem-calc(10);
+    }
+  }
+
+}
+///////////////////////////////payment.html style
+
+.sub-header{
+  background-color: #dedede;
+  @include grid-row();
+  @include bp(wide){
+  min-width: 100%;
+  }
+  .sub-header-img{
+    @include bp(tablet){
+    @include grid-column(3);
+      }
+    }
+  .sub-header-content{
+    padding: rem-calc(40) rem-calc(20);
+
+    @include bp(tablet){
+    @include grid-column(5.5);
+    }
+    @include bp(desktop){
+    @include grid-column(6);
+    margin-right: rem-calc(100);
+    }
+    @include bp(wide){
+    @include grid-column(8);
+    margin-right: 0;
+    }
+
+    h1{
+      font-size: rem-calc(26);
+      color: $black;
+      font-family: 'Marcellus SC', serif;
+      line-height: 1.1;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      @include bp(tablet){
+      font-size: rem-calc(28);
+      }
+      @include bp(wide){
+      letter-spacing: 0.2em;
+      }
+    }
+    .h1-span{
+      font-size: rem-calc(13);
+      color: $medium-gray;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 0.2em;
+      @include bp(tablet){
+      letter-spacing: 0.3em;
+      font-size: rem-calc(14);
+      }
+    }
+    p{
+      font-size: rem-calc(14);
+      color: $medium-gray;
+      margin-top: rem-calc(40);
+    }
+    h6{
+      color: $medium-gray;
+      font-size: rem-calc(14);
+      font-family: 'Lato', sans-serif;
+      display: inline-block;
+    }
+    .h6-email{
+      border-right:  0.5px solid #cccccc;
+      margin-right: rem-calc(10);
+      padding-right: rem-calc(15);
+      @include bp(wide){
+      margin-right: rem-calc(30);
+      padding-right: rem-calc(35);
+      }
+    }
+    .span{
+      font-size: rem-calc(10);
+    }
+    .email{
+      font-size: rem-calc(14);
+      text-decoration: underline;
+      color: $black;
+    }
+    .number{
+      font-size: rem-calc(16);
+      color: $black;
+      font-weight: bold;
+    }
+
+  }
+}

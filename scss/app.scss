@@ -1,8 +1,14 @@
 @charset 'utf-8';
 
-@import 'settings';
+@import 'settings/foundation';
+@import 'tools/mixins';
 @import 'foundation';
 @import 'motion-ui';
+@import 'https://fonts.googleapis.com/css?family=Lato';
+@import 'https://fonts.googleapis.com/css?family=Lato|Marcellus+SC';
+@import 'https://fonts.googleapis.com/css?family=Lato|Marcellus+SC|Roboto:300i';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Gentium+Basic:400i';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -48,3 +54,9 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import 'components/header';
+@import 'components/nav';
+@import 'components/banner';
+@import 'components/section';
+@import 'components/footer';
